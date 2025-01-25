@@ -1,0 +1,19 @@
+.aid-tooltip {
+  background: #fff;
+  border: 2px solid red;
+  padding: 5px;
+  z-index: 9999;
+  color: #000;
+  font-size: 12px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background: #ffebee;
+  border-radius: 3px;
+  max-width: 300px;
+  word-break: break-word;
+}
+
+.aid-tooltip:hover {
+  z-index: 10000;
+}

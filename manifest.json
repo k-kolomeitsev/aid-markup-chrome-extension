@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "AID Markup Attributer",
+  "version": "1.0",
+  "description": "Adds aid-markup attributes based on JSON configurations",
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "css": [
+        "content.css"
+      ]
+    }
+  ],
+  "options_page": "options.html"
+}

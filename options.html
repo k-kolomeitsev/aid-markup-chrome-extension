@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Extension Settings</title>
+    <style>
+        .config-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .delete-btn {
+            margin-left: auto;
+            color: #ff4444;
+            cursor: pointer;
+        }
+    </style>
+    <script src="options.js"></script>
+</head>
+<body>
+    <h1>Configuration Loading</h1>
+    
+    <!-- Loading Section -->
+    <div>
+        <h3>From GitHub</h3>
+        <input type="text" id="githubUrl" placeholder="Link to raw JSON">
+        <button id="loadGithub">Load</button>
+    </div>
+    
+    <div>
+        <h3>From File</h3>
+        <input type="file" id="localFile" accept=".json">
+    </div>
+
+    <!-- Configuration List -->
+    <div>
+        <h3>Loaded Configurations</h3>
+        <div id="configList"></div>
+    </div>
+</body>
+</html>
